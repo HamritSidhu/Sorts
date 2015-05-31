@@ -10,17 +10,17 @@ namespace sorts
     {
         static void Main(string[] args)
         {
-            int[] list = { 1, 5, 7, 9, 3, 6, 17, 12}; //sample list to sort
+            int[] list = { 1, 5, 7, 9, 3, 6, 17, 12 }; //sample list to sort
 
-            var bubbleSort = new _bubblesort();
-            int[] bSortedList = bubbleSort.performSort(list);
+            var sort = new _mergesort();
+            int[] sortedList = sort.performSort(list);
 
-            string bOutput = "Bubble Sorted Output: ";
-            for (int i = 0; i < bSortedList.Length; i++) {
-                bOutput += bSortedList[i] + " ";
-            }
+            string output = "Sorted Output: ";
+            for (int i = 0; i < sortedList.Length; i++)
+                output +=sortedList[i] + " ";
+            
 
-            Console.WriteLine(bOutput);
+            Console.WriteLine(output);
             Console.ReadLine();
 
         }
