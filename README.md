@@ -1,2 +1,2 @@
 # Sorts
-Collection of sorting algorithm implementations.
+A collection of sorting algorithm implementations.
